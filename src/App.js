@@ -40,7 +40,7 @@ function App() {
 
 
     return (
-    <div className="bg-[#007B46] relative h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
+    <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
         <h1 className="text-2xl font-semibold text-[#fff] pt-10">El jardín de Elisa 💛</h1>
         <p className="text-[#fff] pt-4">Instrucciones:</p>
         <p className="text-[#fff]">Hola amor, para empezar da un tap/click en la primer flor de tu jardín. Espero te guste tu sopresa.</p>
