@@ -56,6 +56,24 @@ function App() {
         song: "https://open.spotify.com/track/3td8WklPGKKDSuOHbyxRdD?si=b6f77baf1ddf4514"
     }
 
+    const day3 = {
+        day: 'Día 3',
+        title: 'Hola mi abogada 💛️',
+        body: `
+                    <p>
+                       Wow, mi mamá ya se refirió a ti como "la licenciada de la familia" ¿fue en broma? Posiblemente, pero nunca pensé que lo haría. Significa mucho para mí que hayas
+                       venido a apoyarla en este "problema" y seguramente para ella también porque sabe que cuando necesite a su nuera ella vendrá al rescate como la canción de
+                       Junior H. Sentí muy bonito al saber que aunque yo estuviera trabajando tú pudieras estar con mi familia conviviendo y que todo estaba bien, sé que ellos ya vieron también
+                       lo mágnifica y especial que eres. 
+                       Ayer te dije que ya tenía preparada la canción para hoy y sí, en cuanto leí lo que me dijiste lo supe. Hay una frase muy específica en ella y estoy seguro que la sabrás identificar en cuanto la escuches.
+                       Ya quiero poder platicar contigo más a fondo y explicarte porqué esta semana me concentré tanto en mi trabajo.
+                       Espero que podamos vernos mañana y si no el sábado será. PERO DEL DOMINGO NO PASA, LO DECRETO.
+                    </p>
+                    <b>Una vez más, gracias por ser la mejor novia, te amo  💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/5fqTzpRmb1hzL0J5SD5H4b?si=de27cd857caa4086"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -106,7 +124,10 @@ function App() {
                         <div className="petal3"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day3)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
