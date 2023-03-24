@@ -74,6 +74,22 @@ function App() {
         song: "https://open.spotify.com/track/5fqTzpRmb1hzL0J5SD5H4b?si=de27cd857caa4086"
     }
 
+    const day4 = {
+        day: 'Día 4',
+        title: 'Hola mi motomami 💛️',
+        body: `
+                    <p>
+                       Soy ing. a mucha honra. Mi junta no termina y mi diente me duele no sé porqué. POR ESTAR ESCRIBIENDO ESTO NO ME DESPEDÍ JASJDASJ. Ahora sí, dije que tenías suerte porque hoy no
+                       tendrás que esperar todo el día para desbloquear esta tarjeta, benditos los viernes. 
+                       Eres mi licenciada favorita, espero que hoy podamos ver The Office o alguna película o un meet para platicar porque sí te extraño. Me gusta mucho platicar y bromear contigo
+                       y escucharte, es lo que le falta a mi semana para estar completa. La canción de esta semana es viejita, quizá la conozcas y espero te alegre tu viernes. Ya quiero echar karaoke contigo.
+                       Nos ponemos de acuerdo más tarde o mañana para ver si nos vemos esta semana o no. Te extraño fakin faker.
+                    </p>
+                    <b>Tu novio el ing, te amo 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/11lIZiXNEY3eacKxwEvDiK?si=2becfcef184d46c3"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -138,7 +154,10 @@ function App() {
                         <div className="petal"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day4)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal2"></div>
