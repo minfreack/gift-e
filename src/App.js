@@ -103,6 +103,18 @@ function App() {
         song: "https://open.spotify.com/track/52Bg6oaos7twR7IUtEpqcE?si=f717d4d843354ec8"
     }
 
+    const day6 = {
+        day: 'Día 6',
+        title: 'Hola Elisa 💛️',
+        body: `
+                    <p>
+                       Hoy no hay mucho que pueda decir, dejaré que la canción lo haga.
+                    </p>
+                    <b>Te quiero 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/1qlyZ5QAPK7WEtIukfMoNM?si=2d810c6464574908"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -195,7 +207,10 @@ function App() {
                         <div className="petal3"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day6)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
