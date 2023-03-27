@@ -115,6 +115,22 @@ function App() {
         song: "https://open.spotify.com/track/1qlyZ5QAPK7WEtIukfMoNM?si=2d810c6464574908"
     }
 
+    const day7 = {
+        day: 'Día 7',
+        title: 'Hola mi niña 💛️',
+        body: `
+                    <p>
+                       Wow, una semana en racha. La verdad sí esperaba llegar a esto y también llenar todo el jardín. Hoy también pude
+                       subir el día más temprano porque todavía no tengo la junta con Pedro para ver qué tanto tocará hacer esta semana.
+                       Sé que necesitas afecto y al rato te prometo que me encargaré de ello, gracias por formar parte de mi vida. Espero
+                       esta canción te ayude a superar tu día de andar de aquí pa allá. La misión de hoy es terminar el capítulo de The Office
+                       y convivir más con tu abuelito. Manifiesta que hoy Mbappé y Francia ganen porque le metí 100 varos, paro 🥺
+                    </p>
+                    <b>Te amo 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP?si=820b379394934238"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -221,7 +237,10 @@ function App() {
                         <div className="petal"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day7)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal2"></div>
