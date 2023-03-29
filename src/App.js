@@ -131,6 +131,23 @@ function App() {
         song: "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP?si=820b379394934238"
     }
 
+    const day8 = {
+        day: 'Día 8',
+        title: 'Hola mi cielo 💛️',
+        body: `
+                    <p>
+                       Ayer con las canciones de "abuelitos" quería que pusieras esta pero recordé que ya la tenía preparada para este lugar.
+                       Ojalá algún día tu abuelito me enseñe a bailarla para poder disfrutarla contigo. Te extraño y ya quiero que el plan que
+                       puse en tu agenda se cumpla, será una forma muy bonita de cerrar este mes lleno de tragedias. Te quiero mucho, porfa dame
+                       un poco de suerte para poder ganar mis apuestas y así poder comprarte tu plaza en el pjf. Un saludo a la abogada más preciosa de todas.
+                       Descansa, te amo.
+                 
+                    </p>
+                    <b>De parte de tu cuchurrumin 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/4F6Ne3xyctrytvYm9W68ll?si=b53500712cc74807"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -251,7 +268,10 @@ function App() {
                         <div className="petal2"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day8)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal3"></div>
