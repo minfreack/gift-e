@@ -148,6 +148,22 @@ function App() {
         song: "https://open.spotify.com/track/4F6Ne3xyctrytvYm9W68ll?si=b53500712cc74807"
     }
 
+    const day9 = {
+        day: 'Día 9',
+        title: 'Hola mi gatita 💛️',
+        body: `
+                    <p>
+                       Hoy me di cuenta que te amé dice la cumbia. En esta ocasión quiero decirte que estoy aquí para apoyarte en todo y cada que
+                       lo necesites. Extraño mucho platicar contigo y es lo que más quiero que pase en estos últimos días del mes. Sé que nos hemos
+                       visto pero siento que no ha sido algo solo de nosotros, ojo no me molesta que nos reunamos con mi familia o con la tuya, solo que
+                       ya quiero estar contigo a solas. La canción de hoy es un poco diferente a lo usual pero me gusta un chingo, es de mi banda favorita
+                       en español y rezo porque un día podamos verlos en vivo. Te quiero mucho gatita. Sí, esa música tenía ahorita que estaba programando.
+                    </p>
+                    <b>El ingenoebrio 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/6LFqTCYtK8adZGBDL8BTM1?si=9ff9ff30318e4560"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -282,7 +298,10 @@ function App() {
                         <div className="petal3"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day9)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
