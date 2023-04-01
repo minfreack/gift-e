@@ -180,6 +180,20 @@ function App() {
         song: "https://open.spotify.com/track/4u5xLMRN0dgKBFFN8FiNgv?si=e82e196b854b41d9"
     }
 
+    const day11 = {
+        day: 'Día 11',
+        title: 'Hola mi princesa 💛️',
+        body: `
+                    <p>
+                       Hoy no tengo una historia o algo porque me la pasé perdiendo el tiempo. Solo quiero decir que espero podamos vernos mañana,
+                       que pase lo que tenga que pasar y podamos pláticar y estar solos otra vez. Te quiero mucho. Espero te hayas divertido con tus amigos
+                       y esto lo estés leyendo al regresar.
+                    </p>
+                    <b>Te amo 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/0E8qIw6KblOtDQYzzHQrxL?si=9bb7c611fcb547cf"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -342,7 +356,10 @@ function App() {
                         <div className="petal2"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day11)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal3"></div>
