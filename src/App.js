@@ -207,6 +207,21 @@ function App() {
         song: "https://open.spotify.com/track/4LjkHlY5qDz0hhFJJH5M7a?si=d3ef94c280304ad0"
     }
 
+    const day13 = {
+        day: 'Día 13',
+        title: 'Hola mi universitaria de vacaciones 💛️',
+        body: `
+                    <p>
+                       Toy cansao mamita. Increíble que en una semana más ya vamos a cumplir dos meses juntos. Hemos pasado muchas cosas y como te dije una vez estoy 
+                       aún más emocionado por todo lo que viene para ambos. Te quiero mucho y me hace muy feliz estar contigo. Amo que tú seas mi compañera y cada que te 
+                       veo a los ojos estoy más seguro que es contigo con quien quiero estar. Eres perfecta pequeña y no quiero perderte. Hoy me dieron ganas de ponerte
+                       una canción de señor, espero la reconozcas. Te amo.
+                    </p>
+                    <b>De tu f1fas 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/1oBMy1HuG3PFfRGXgnuMeC?si=f5c3d4eef14442a5"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -399,7 +414,10 @@ function App() {
                         <div className="petal"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day13)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal2"></div>
