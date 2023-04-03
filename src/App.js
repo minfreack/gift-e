@@ -1,5 +1,6 @@
 import Modal from "./modal";
 import React, {useState} from 'react'
+import dayjs from "dayjs";
 
 function App() {
 
@@ -222,6 +223,21 @@ function App() {
         song: "https://open.spotify.com/track/1oBMy1HuG3PFfRGXgnuMeC?si=f5c3d4eef14442a5"
     }
 
+    const day14 = {
+        day: 'Día 14',
+        title: 'Hola mi gatita dorada 💛️',
+        body: `
+                    <p>
+                       Debido a el retraso con los días anteriores este se estará desbloqueando a media noche. Estoy experimentando con el proyecto y creo que si en vacaciones
+                       tengo tiempo agregaré más cosillas. Espero disfrutes tu primer día de vacaciones, yo estaré en el jale pero enfocado en que el jueves ya estaré "descansando"
+                       un rato. Qué ganas de que pase más rápido el tiempo y ya sea nuestro aniversario, ya quiero llenarte de besos y tomarme ese café contigo, y un panesito con 
+                       nutella ufff. Muchas gracias por ser quién eres y por todo lo que haces por mi. Te amo mucho mi vida.
+                    </p>
+                    <b>De tu golden retriever 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/1oBMy1HuG3PFfRGXgnuMeC?si=f5c3d4eef14442a5"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -428,7 +444,12 @@ function App() {
                         <div className="petal2"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    if(dayjs().date() >= 3 && dayjs().month() >= 3){
+                        setDayToModal(day14)
+                        setVisible(true)
+                    }
+                }} className={`relative ${dayjs().date() >= 3 && dayjs().month() >= 3 && 'cursor-pointer'}`}>
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal3"></div>
