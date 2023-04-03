@@ -194,6 +194,19 @@ function App() {
         song: "https://open.spotify.com/track/0E8qIw6KblOtDQYzzHQrxL?si=9bb7c611fcb547cf"
     }
 
+    const day12 = {
+        day: 'Día 12',
+        title: 'Hola mi enfermera 💛️',
+        body: `
+                    <p>
+                       Esto se está escribiendo un día después una disculpa. Me enfermé y me tuvieron que atender pero ya todo bien. Ya te dije varias cosas 
+                       en este día y la canción irá relacionada a ello. Me encanta estar contigo a solas y ya era justo y necesario sentirte conmigo.
+                    </p>
+                    <b>De tu único paciente 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/4LjkHlY5qDz0hhFJJH5M7a?si=d3ef94c280304ad0"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -371,7 +384,10 @@ function App() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-wrap">
+            <div onClick={() => {
+                setDayToModal(day12)
+                setVisible(true)
+            }} className="flex flex-wrap cursor-pointer">
                 <div className="relative ">
                     <div className="flower">
                         <div className="center"></div>
