@@ -384,11 +384,11 @@ function App() {
                     </div>
                 </div>
             </div>
-            <div onClick={() => {
-                setDayToModal(day12)
-                setVisible(true)
-            }} className="flex flex-wrap cursor-pointer">
-                <div className="relative ">
+            <div className="flex flex-wrap">
+                <div onClick={() => {
+                    setDayToModal(day12)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
