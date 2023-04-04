@@ -235,7 +235,7 @@ function App() {
                     </p>
                     <b>De tu golden retriever 💛️️</b>
         `,
-        song: "https://open.spotify.com/track/1oBMy1HuG3PFfRGXgnuMeC?si=f5c3d4eef14442a5"
+        song: "https://open.spotify.com/track/5wqYk9neBUBEISWVS4a3qL?si=46a0da0210f94799"
     }
 
 
