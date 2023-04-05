@@ -238,6 +238,21 @@ function App() {
         song: "https://open.spotify.com/track/5wqYk9neBUBEISWVS4a3qL?si=46a0da0210f94799"
     }
 
+    const day15 = {
+        day: 'Día 15',
+        title: 'Hola mi barbie 💛️',
+        body: `
+                    <p>
+                       La verdad es que debido a los acontecimientos de hoy no tengo mucho que contar, o sí pero me gustaría hacerlo cuanto te vea.
+                       Solo quiero agradecerte por estar conmigo y apoyarme incluso en este tipo de momentos en los que parece que las cosas no están
+                       bien. Eres la luz en mis momentos de oscuridad y agradezco a Dios, la vida, el universo, a quién sea que haya juntado nuestros caminos
+                       porque eres el mejor regalo que pude recibir. Espero que siempre seas mi compañera de vida y quiero que tú veas lo mismo en mí.
+                    </p>
+                        <b>Te amo 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/2iM66WDc3xPT079WNX4aQ3?si=35de8a3799b448f6"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -460,7 +475,10 @@ function App() {
                         <div className="petal3"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day15)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
