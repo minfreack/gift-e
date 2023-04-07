@@ -269,6 +269,22 @@ function App() {
         song: "https://open.spotify.com/track/7s41ZGjQB5Ur8T0fQlk5uM?si=cb69add8972a4c99"
     }
 
+    const day17 = {
+        day: 'Día 17',
+        title: 'Hola mi cinéfila 💛️',
+        body: `
+                    <p>
+                       Escribo esto desde rápido porque no quiero que esperes mucho por esta flor. Quiero decirte que te extraño mucho
+                       y me haces mucha falta. Es la primer flor que te escribo fuera de casa y a una distancia tan grande de ti. Se me hace un
+                       poco raro cuando me preguntan qué tal el trabajo y saber que a fin de mes puedo ser un desempleado, pero sé que podré 
+                       resolverlo desde antes porque tengo a la mejor persona apoyándome. Te amo mucho y sé que juntos vamos a poder
+                       superar todas las adversidades que se nos pongan, ya quiero verte mi amor.
+                    </p>
+                        <b>Te amo hoy y siempre 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/7rOh0DBUVdsq8JDX0tqXyP?si=27c8a6f8aeac4e63"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -519,7 +535,10 @@ function App() {
                         <div className="petal2"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day17)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal3"></div>
