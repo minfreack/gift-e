@@ -285,6 +285,22 @@ function App() {
         song: "https://open.spotify.com/track/7rOh0DBUVdsq8JDX0tqXyP?si=27c8a6f8aeac4e63"
     }
 
+    const day18 = {
+        day: 'Día 18',
+        title: 'Hola mi Holly 💛️',
+        body: `
+                    <p>
+                       Me encanta que entiendas mis cosas, chistes, referencias, etc. creo que hace que lo nuestro sea más especial.
+                       En términos de The Office que es lo que vimos hoy, eres mi Pam, mi Holly, mi chica ideal. Te amo y te extraño
+                       mucho. Todos los días pienso en ti y eres mi persona favorita del mundo también. Me divierto mucho
+                       contigo y cada que estamos juntos olvido todas las cosas malas, eres mi safe place y siempre lo serás. 
+                       Espero podamos vernos este fin para llenarte de besos y abrazarte.
+                    </p>
+                        <b>De tu Michael Scott 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/3nTP1d8K9jHFHiozzXGVDF?si=4ca4c5965464442b"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -549,7 +565,10 @@ function App() {
                         <div className="petal3"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day18)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
