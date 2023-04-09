@@ -301,6 +301,35 @@ function App() {
         song: "https://open.spotify.com/track/3nTP1d8K9jHFHiozzXGVDF?si=4ca4c5965464442b"
     }
 
+    const day19 = {
+        day: 'Día 19',
+        title: 'Hola sol de abril 💛️',
+        body: `
+                    <p>
+                       Estar contigo hoy fue lo más bonito de mi semana, te extrañé mucho y me hiciste mucha falta.
+                       Te amo y te agradezco mucho por ser mi luz en la oscuridad.
+                    </p>
+                        <b>De tu Luis Miguel 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/4pbG9SUmWIvsROVLF0zF9s?si=14e023ff21a146f7"
+    }
+
+    const day20 = {
+        day: 'Día 20',
+        title: 'Hola inspiración 💛️',
+        body: `
+                    <p>
+                       Escribo esto después de haberme tomado esa cosa que no es jugo. Si muero quiero que sepas
+                       que escribir esto diario me hacía muy feliz. No puedo creer que mañana ya cumpliremos 2 meses juntos,
+                       hemos pasado muchas cosas y solo estoy esperando todo lo que nos falta. Eres una persona maravillosa
+                       y te mereces todo lo bueno de este mundo. Espero que mañana pueda ser un día muy bonito juntos y disfrutes
+                       el postrezazo que espero pedir.
+                    </p>
+                        <b>Te amo millones 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/72PH0aQ1x4U9feP72W980h?si=d940970a16b7415c"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -579,7 +608,10 @@ function App() {
                         <div className="petal"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day19)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal2"></div>
@@ -590,7 +622,10 @@ function App() {
                         <div className="petal2"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day20)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal3"></div>
