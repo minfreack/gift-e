@@ -330,6 +330,41 @@ function App() {
         song: "https://open.spotify.com/track/72PH0aQ1x4U9feP72W980h?si=d940970a16b7415c"
     }
 
+    const day21 = {
+        day: 'Día 21',
+        title: 'Hola churrita 💛️',
+        body: `
+                    <p>
+                       Esto se tuvo que haber subido el día de ayer en nuestro aniversario pero por causas de fuerza muy mayor lo hago
+                       hasta hoy, perdóname. A veces me pregunto si no llegarás a aburrirte en algún de que te diga siempre lo mismo pero te juro
+                       que no me canso de hacerlo, te amo muchísimo, eres perfecta para mí pequeña. En estos dos meses puedo decir que todo lo
+                       que esperaba de la famosa Elisa Durán es cierto y hasta supera mis expectativas. Eres una novia increíble, cariñosa, hermosa,
+                       responsable, eres mi inspiración. Sé que a veces no soy el novio que esperas y te pido disculpas por ello, creéme que
+                       diario me esfuerzo por ser un buen hombre para ti y espero que siempre me veas de esa manera. Me hace muy feliz que tu
+                       familia me acepte, que me incluyas en tus planes y siempre cuentes conmigo porque la verdad es que yo siempre estaré para ti.
+                       Así me esté muriendo como hoy, no quiero que en algún momento dudes que te apoyaré. Gracias por ser mi compañera, mi amiga, mi novia,
+                       mi todo. Te amo Elisa te aaaaamo.
+                    </p>
+                        <b>Siempre tuyo, Luis 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/6ZEVQ2whiJvhjCNAOJ0DC3?si=1bc4da58023f402d"
+    }
+
+    const day22 = {
+        day: 'Día 22',
+        title: 'Hola licenciada 💛️',
+        body: `
+                    <p>
+                       Hoy soy papá de una nueva hija. Le toqué varias canciones en piano y me acompaño cuando me sentía al borde
+                       de la muerte. Ojalá algún día seas tú la que me cuide por la noche. Te deseo mucho éxito mañana en tu entrevista
+                       sé que te irá muy bien y que valorarán y verán tus grandes capacidades. Eres una persona y abogada increíble que
+                       hasta una maestra sacará del CBTis. Ya quiero verte en la boda y bailar y tener nuestra primer fiesta juntooos.
+                    </p>
+                        <b>De tu churrito 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/4Z3wNhlam0BHHnK1lZmPRU?si=2410782276d74695"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -636,7 +671,10 @@ function App() {
                         <div className="petal3"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day21)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
@@ -647,7 +685,10 @@ function App() {
                         <div className="petal"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day22)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal2"></div>
