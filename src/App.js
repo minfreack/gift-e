@@ -380,6 +380,24 @@ function App() {
         song: "https://open.spotify.com/track/4yEJ1SNpgfK5GPx3Y0YhIU?si=78e454835e844da3"
     }
 
+    const day24 = {
+        day: 'Día 24',
+        title: 'Hola preciosa 💛️',
+        body: `
+                    <p>
+                       Si le hubieras dicho al Luis de hace un año que programaría un jardín para su novia con flores que se 
+                       desbloquean cada día no sé si te hubiera creído. No sé si te diste cuenta pero al menos en la mac noté
+                       que ya vamos a la mitad del camino. Más de 3 semanas subiendo flores para ti. Casualmente hoy también fue un 
+                       dia de mucha "reflexión" entre nosotros, vuelvo a repetirte que sé que a veces es díficil hablar de ciertos temas
+                       pero creo que solo haciéndolo es como seguiremos creciendo como pareja. Estoy muy feliz y me siento en total confianza de
+                       poder hablar contigo las cosas que me hagan sentir raro, triste, o simplemente que no esté de aucerdo, espero que de tu lado 
+                       sea lo mismo. Gracias por apoyarme siempre, por escucharme y por darme la seguridad y confianza de estar contigo. 
+                    </p>
+                        <b>Te llevo siempre conmigo 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/3ydweVPwq9PCEVJ8WwqT6u?si=1fbe38b4ac464a40"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -730,7 +748,10 @@ function App() {
                 </div>
             </div>
             <div className="flex flex-wrap">
-                <div className="relative ">
+                <div onClick={() => {
+                    setDayToModal(day24)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
