@@ -412,6 +412,37 @@ function App() {
         song: "https://open.spotify.com/track/6ccHuWQAQhdZ0JCFlTHvNM?si=0fb8273b259e4cd9"
     }
 
+    const day26 = {
+        day: 'Día 26',
+        title: 'Hola mi pareja de baile 💛️',
+        body: `
+                    <p>
+                       Hoy la flor será un poco corta pero quiero decirte que fue un día muy especial para mí. Estar contigo toda la tarde y noche fue
+                       una de las cosas más bonitas de todas, te veías preciosa y bailar contigo y todo fue perfecto. Estuve imaginándo qué canción 
+                       me gustaría bailar contigo en nuestra boda y la respuesta la tienes aquí.
+                    </p>
+                        <b>Te amo 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/4rHZZAmHpZrA3iH5zx8frV?si=a2cdf0069f304951"
+    }
+
+    const day27 = {
+        day: 'Día 27',
+        title: 'Hola runner 💛️',
+        body: `
+                    <p>
+                       Día post-boda, esto ya te lo había dicho pero muchas gracias por tomar acción de lo que hablamos en días pasados, es algo que
+                       valoro mucho y siempre recordaré. Me hace sentir con toda la confianza de hablar contigo cuando me sienta así o acerca de otra cosa y
+                       espero tú te sientas igual. La flor de hoy será para animarte para que el día de mañana inicies con todo en tu nuevo despacho y en las clases
+                       de la uni. Eres una chingona y puedes y logras todo lo que te propones, estoy muy orgulloso de ti y sabes que estoy para lo que necesites. La 
+                       canción de hoy será para recordarte que todo estará bien y que ahora me tienes a tu lado.
+                 
+                    </p>
+                        <b>Te adoro 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/5YciOakY5dB5dULkiLdCaf?si=60254947d7cb4bbd"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -790,7 +821,10 @@ function App() {
                         <div className="petal2"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day26)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal3"></div>
@@ -801,7 +835,10 @@ function App() {
                         <div className="petal3"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day27)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
