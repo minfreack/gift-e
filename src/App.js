@@ -443,6 +443,20 @@ function App() {
         song: "https://open.spotify.com/track/5YciOakY5dB5dULkiLdCaf?si=60254947d7cb4bbd"
     }
 
+    const day28 = {
+        day: 'Día 28',
+        title: 'Hola amante de las camineras 💛️',
+        body: `
+                    <p>
+                       Hoy no es mi día pero te vi y mejoró, me hizo sentir mucho mejor. No platicamos mucho pero me ayuda que me abraces y me des mis besos.
+                       Si este jardin fuera febrero esta sería la última flor. Justo acabo de recibir tu mensaje después de que me pidieras que fuera tu vato. 
+                       Creo que está canción no puede ocuparse para eso, o quizá sí, la cosa está en que sé te gustará. 
+                    </p>
+                        <b>Te quiero 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/1RB8jMVr0eSo6ExOOvXavV?si=7123926be9f74097"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -849,7 +863,10 @@ function App() {
                         <div className="petal"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day28)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal2"></div>
