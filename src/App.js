@@ -469,6 +469,31 @@ function App() {
         song: "https://open.spotify.com/track/19blFYzqmPj7FtW7W4DFEl?si=7f015ac0d6114430"
     }
 
+    const day30 = {
+        day: 'Día 30',
+        title: 'Hola mi todo 💛️',
+        body: `
+                    <p>
+                       Si este jardín fuera abril esta sería la última flor. Sé que por mensaje ya te dije muchas cosas hoy pero quiero reafirmarte lo que te dije,
+                       yo estoy para apoyarte amor, en el momento en el que me necesites decir algo, pedir ayuda en algo no dudes en acercarte a mí porque yo con todo el 
+                       gusto del mundo lo haré. No tengas pena o algo en ningún momento. Estoy orgulloso de ti y aunque este mes no ha sido el mejor para ambos sé -que como tú me
+                       dijiste ayer- que saldremos adelante. Me hace muy feliz que ya estés trabajando y desenvolviendote en el área que te gusta, todavía recuerdo (y lo tengo en destacados)
+                       el momento en el que me dijiste que estabas muy feliz por estudiar derecho, que habías descubierto que te gusta mucho y es lo que quieres hacer, es por eso que siento
+                       todavía más alegría al ver que poco a poco el camino se está formando para que logres todas tus metas y logros que tienes planeados. Eres una persona maravillosa y
+                       no quiero que te preocupes por mí en los momentos en los que tengas que tomarte un tiempo para hacer tus tareas o pendientes del trabajo, quiero que triunfes y no quiero
+                       llegar a ser un impedimento en ello. No sé qué nos deparen estos días futuros, recuerdo que el mes pasado dije que abril sería muy cabrón pero parece que fallé un poco la 
+                       predicción, pero lo que tengo claro es que estar contigo hace mis días mejor, así que espero que yo pueda ser eso para ti. Pensemos en que ya viene tu cumpleaños y espero con
+                       todo mi ser que para ese entonces podamos estar de huevos los dos, manifestando 🙏🏻. Te amo con todo mi ser y espero poder verte pronto para poder ponernos al corriente con todo
+                       lo que ha pasado en estos días en ambos lados. Hoy mientras esperaba la combi tomé la decisión de que el momento de tener un misterio bajo la manga llegaría a su fin en esta flor.
+                       Me alegra mucho que la comida tu mamá y Luis Miguel hayan podido alegrar este día tan pesado que tuviste, espero esta canción pueda también ayudar un poco. Eres el ser más precioso
+                       que existe, te amo y siempre te amaré con todo mi corazón Elisa D. 
+                      
+                    </p>
+                        <b>Siempre tuyo, Luis Ernesto 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/3weNRklVDqb4Rr5MhKBR3D?si=5d0aa6901b514b4d"
+    }
+
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -903,7 +928,10 @@ function App() {
                         <div className="petal3"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day30)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
