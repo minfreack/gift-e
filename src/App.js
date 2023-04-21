@@ -499,7 +499,7 @@ function App() {
         title: 'Hola mi luz 💛️',
         body: `
                     <p>
-                       Qué bonito es verte ya animada, me pone muy feliz que ya estés mejor. Hoy ya te di un cupón que espero si canjees el fin y así también poder aprovechar para estar juntos y platicar y
+                       Qué bonito es verte ya animada, me pone muy feliz que ya estés mejor. Hoy ya te di un cupón que espero sí canjees el fin y así también poder aprovechar para estar juntos y platicar y
                        mimir como hace falta. Por cierto, aunque un día no me pidas flor la voy a subir, no planeo romper una racha de más de un mes subiendo flores a este jardín. Te extraño mucho churrita y
                        aunque sé que ahora no te puedo besar porque toy enfermito solo tu presencia y escucharte me sube el ánimo cabrón. Espero que te guste la canción, es muy de señor pero en cuanto la
                        escuché supe que tenía que estar aquí. Te amo mi vida.
