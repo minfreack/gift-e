@@ -509,6 +509,34 @@ function App() {
         song: "https://open.spotify.com/track/7EjNvqolyU8YKutApPPwXe?si=99e7a88771174fec"
     }
 
+    const day32 = {
+        day: 'Día 32',
+        title: 'Hola mi chef 💛️',
+        body: `
+                    <p>
+                       Un día tan hermoso como hoy merece una canción tan hermosa como esta. Me hace muy feliz que estés conmigo, que me 
+                       cocines algo, que me llenes de besos y que hagas hasta lo imposible por estar conmigo.
+                    </p>
+                        <b>Te amo 💛️️</b>
+        `,
+        song: "    https://open.spotify.com/track/500h8jAdr7LvzzXlm1qxtK?si=f81f7c7f4bc74bf2"
+    }
+
+    const day33 = {
+        day: 'Día 33',
+        title: 'Hola mi lugar seguro 💛️',
+        body: `
+                    <p>
+                       Me hubiera gustado mucho estar contigo en el parque que me mandaste, tomados de la mano y en paz. Para mí estar contigo 
+                       es como estar ahí, sentir paz, tranquilidad y que todo estará bien. Me encanta que tu familia ya se refiera a mí como tu novio
+                       y platiquen de mí, que me agarres la mano frente a ellos y sentir que ya saben que soy parte de tu vida. Siempre fue mi sueño y 
+                       ver que poco a poco se hace realidad me fascina. Sé que vienen más historias juntos y que ya seré aceptado/invitado a más cosas
+                       porque ya soy tu galáaaaaaan oficialmente. Te amo churrita.
+                    </p>
+                        <b>De tu galán 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/0LxeKwg9t7HOnyfv4bTALT?si=596f5a3796e843d5"
+    }
 
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
@@ -971,7 +999,10 @@ function App() {
                         <div className="petal2"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day32)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal3"></div>
@@ -982,7 +1013,10 @@ function App() {
                         <div className="petal3"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day33)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
