@@ -538,6 +538,37 @@ function App() {
         song: "https://open.spotify.com/track/0LxeKwg9t7HOnyfv4bTALT?si=596f5a3796e843d5"
     }
 
+    const day34 = {
+        day: 'Día 34',
+        title: 'Hola mi masajista 💛️',
+        body: `
+                    <p>
+                       Mi fin de semana fue increíble y tú fuiste la principal razón. Estar contigo hace que me olvide de mis dolores, que me sienta querido,
+                       acompañado y muy feliz. Amo hacerte feliz, amo verte sonreir y amo todo lo que haces por mí. Eres una persona maravillosa y siempre me 
+                       pregunto cómo fue que le hice para estar contigo. Me gusta mucho convivir con tu familia, me la paso increíble escuchando sus historias
+                       y creéme que me siento muy querido cuando voy a tu casa. Te agradezco a ti y a todos ellos por eso. Te amo mucho y espero ya estés mejor
+                       después de nuestro momento.
+                    </p>
+                        <b>Te amo 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/1hOdqc7kl4jZ5bYPPJdpib?si=5601abdc323e43bd"
+    }
+
+    const day35 = {
+        day: 'Día 35',
+        title: 'Hola mi novia 💛️',
+        body: `
+                    <p>
+                       Va a empezar la batalla contra los cólicos de mi princesa y ya estoy preparado para ello. Espero te haya gustado mucho escuchar una parte de
+                       mi canción en el recital, sigo fallando en el final pero cuando la tenga completa serás la primera en escucharla. Me encanta recibir notas tuyas
+                       y creo que ya encontramos la app perfecta para nosotros. Te extraño mucho y ya quiero tus besos, espero que el fin podamos vernos y ya pueda
+                       contarte que me siento de maravilla y que pude negociar con esta gente. Te amo mucho churrita
+                    </p>
+                        <b>De tu IDE 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/6Vzl1dv9B6qgaHg8OnvpZF?si=66afed92333b48ef"
+    }
+
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
         <h1 className="text-2xl font-semibold text-[#fff] pt-10">El jardín de Elisa 💛</h1>
@@ -1027,7 +1058,10 @@ function App() {
                         <div className="petal"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day34)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal2"></div>
@@ -1038,7 +1072,10 @@ function App() {
                         <div className="petal2"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day35)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal3"></div>
