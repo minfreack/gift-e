@@ -569,6 +569,21 @@ function App() {
         song: "https://open.spotify.com/track/6Vzl1dv9B6qgaHg8OnvpZF?si=66afed92333b48ef"
     }
 
+    const day36 = {
+        day: 'Día 36',
+        title: 'Hola mi ser de luz 💛️',
+        body: `
+                    <p>
+                       Espero que este sea el último mes de recibir malas noticias y estar tan ocupado mentalmente. La verdad no tengo mucho que
+                       decirte hoy mas que muchas gracias por apoyarme, por demostrarme que siempre estarás para mí y por guíarme y siempre querer
+                       lo mejor para mí. Es justo lo mismo que quiero hacer para ti y espero que tus días también mejoren porque ya viene un mes importante.
+                       Te amo mucho, espero te guste la canción.
+                    </p>
+                        <b>De tu novio el + estresado 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/2TzkIzgzIHhewMxyh1u4hh?si=fd501dc6427d4f0a"
+    }
+
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
         <h1 className="text-2xl font-semibold text-[#fff] pt-10">El jardín de Elisa 💛</h1>
@@ -1088,7 +1103,10 @@ function App() {
                 </div>
             </div>
             <div className="flex flex-wrap">
-                <div className="relative ">
+                <div onClick={() => {
+                    setDayToModal(day36)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
