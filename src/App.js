@@ -584,6 +584,22 @@ function App() {
         song: "https://open.spotify.com/track/2TzkIzgzIHhewMxyh1u4hh?si=fd501dc6427d4f0a"
     }
 
+    const day37 = {
+        day: 'Día 37',
+        title: 'Hola mi estoica 💛️',
+        body: `
+                    <p>
+                       Esta flor sera para decirte que tú puedes. Eres la persona más responsable, comprometida y capaz que conozco. Siempre me sorprende tu
+                       capacidad para poder solucionar miles de cosas aún cuando tengas el estrés y ansiedad encima, ojalá yo pudiera ser igual, es algo que
+                       voy a admirar de ti todos los días de mi vida. Sé que seguramente hay días donde piensas que no puedes seguir o que te vencen los pendientes
+                       pero quiero decirte que sé que puedes con eso y más y estoy muy orgulloso de todo lo que has logrado y lograrás. Espero puedas encontrar
+                       motivación en mi o en las personas que te rodean así como yo la siento gracias a ti. Te amo más de lo que te imaginas.
+                    </p>
+                        <b>De tu novio el desempleado 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/4Z3wNhlam0BHHnK1lZmPRU?si=29636628e6944fc9"
+    }
+
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
         <h1 className="text-2xl font-semibold text-[#fff] pt-10">El jardín de Elisa 💛</h1>
@@ -1117,7 +1133,10 @@ function App() {
                         <div className="petal"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day37)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal2"></div>
