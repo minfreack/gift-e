@@ -612,7 +612,7 @@ function App() {
                     </p>
                         <b>Te amo 💛️️</b>
         `,
-        song: "https://open.spotify.com/track/2i8otid5VKKnEaseBVO1vq?si=e0a66183a2e4449d"
+        song: "https://open.spotify.com/track/0t1UDIDBS2u8k0TltYUHaE?si=052de21c34ed418d"
     }
 
     return (
