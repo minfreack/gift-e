@@ -600,6 +600,21 @@ function App() {
         song: "https://open.spotify.com/track/4Z3wNhlam0BHHnK1lZmPRU?si=29636628e6944fc9"
     }
 
+    const day38 = {
+        day: 'Día 38',
+        title: 'Hola mi estresada 💛️',
+        body: `
+                    <p>
+                       Ya lo dije ayer pero neta admiro todo lo que haces, es increíble cómo sacas tiempo y resuelves todo. Eres la viva imagen de las mujeres y mamás
+                       que atienden a los hijos, la casa, el trabajo, etc. pero tú con gatos como hijos. Me hace muy feliz saber lo capaz y responsable que es mi novia
+                       y sé que no soy el único que lo ve. Espero poder ser tu desestres y despeje de todos los pendientes que tengas y también que estas flores sirvan
+                       para recordarte que siempre estaré para ti
+                    </p>
+                        <b>Te amo 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/2i8otid5VKKnEaseBVO1vq?si=e0a66183a2e4449d"
+    }
+
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
         <h1 className="text-2xl font-semibold text-[#fff] pt-10">El jardín de Elisa 💛</h1>
@@ -1147,7 +1162,10 @@ function App() {
                         <div className="petal2"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day38)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal3"></div>
