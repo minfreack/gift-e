@@ -615,6 +615,18 @@ function App() {
         song: "https://open.spotify.com/track/0t1UDIDBS2u8k0TltYUHaE?si=052de21c34ed418d"
     }
 
+    const day39 = {
+        day: 'Día 39',
+        title: 'Hola mi barbie abogada 💛️',
+        body: `
+                    <p>
+                       Hoy solo diré que apartir de este momento la vida le sonríe a la familia Ramírez Durán. Aquí lo manifiesto.
+                    </p>
+                        <b>Te amo 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/24jvD83UgLmrdGjhWTFslY?si=7134df5491074caa"
+    }
+
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
         <h1 className="text-2xl font-semibold text-[#fff] pt-10">El jardín de Elisa 💛</h1>
@@ -1176,7 +1188,10 @@ function App() {
                         <div className="petal3"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day39)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
