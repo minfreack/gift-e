@@ -660,11 +660,58 @@ function App() {
                     <p>
                       Hoy te gané en las carreras y conociste una nueva versión de tu novio. Seguramente valdrá la pena que mañana esté bien 
                       envarado. Me gustó mucho estar contigo y que hayas venido a pasar un rato con mi familia. Dormir contigo siempre es un 
-                      sueño. Te amo mucho.
+                      sueño. Hoy también se te cumplió por fin escucharme tocar piano, ojalá te haya gustado. Te amo mucho.
                     </p>
                         <b>De tu compañero de vida 💛️️</b>
         `,
         song: "https://open.spotify.com/track/6ft9PAgNOjmZ2kFVP7LGqb?si=f596bfa123fb418a"
+    }
+
+    const day43 = {
+        day: 'Día 43',
+        title: 'Hola compañera de vida 💛️',
+        body: `
+                    <p>
+                      Mi entrevista en inglés fue hoy y gracias a ti que me inspiras siempre a ser alguien mejor me sentí cómodo y capaz, ya recibiré
+                      noticias en estos días pero sé y espero que esto sea el inicio de algo bueno. Eres una maravilla de personay deseo todo lo bueno para 
+                      ti así como tú lo haces en mi caso. Hoy me dijiste que describiera a mi mujer perfecta, a ver si esto ayuda.
+                    </p>
+                        <b>Te amo 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/6jgkEbmQ2F2onEqsEhiliL?si=91c97dce90794ecb"
+    }
+
+    const day44 = {
+        day: 'Día 44',
+        title: 'Hola compañera de viaje 💛️',
+        body: `
+                    <p>
+                      Hoy fue el primer día de nuestro viaje y solo puedo decir que estuvo perfecto, me encantó pasar casi un día entero contigo y no
+                      puedo esperar a verte mañana probándote los vestidoooos, te agradezco muchísimo el que me hagas parte de momentos así de especiales.
+                      Eres la mejor novia que pude haber tenido, espero que este sea el primero de muchos viajes juntos.
+                        
+                    </p>
+                        <b>Te amo 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/2t0wwvR15fc3K1ey8OiOaN?si=ad5ecf869da149c8"
+    }
+
+    const day45 = {
+        day: 'Día 45',
+        title: 'Hola mi reina 💛️',
+        body: `
+                    <p>
+                      FAKIN FAKER. ESTOY ENAMORADO DE TI. Escribo esto el día en que te vi con más de 5 vestidos y no estoy soportando lit. Definitivamente
+                      viviré el resto de mis días emocionado y con el misterio (hasta que llegue el momento) de verte con un vestido blanco. Escogiste un vestido
+                      precioso y déjame decirte que  el día de tu graduación te verás preciosa, serás y siempre has sido la mujer más bonita de todas. Espero ese
+                      día estar a la altura de tu outfit porque igual voy a presumirte 24/7, ese día será exclusivamente para eso. Quiero pasar el resto de mis días
+                      contigo, eres la perfección hecha mujer. Te amo incondicionalmente. Esta canción la pensé en el camino de regreso, espero te guste porque es
+                      100% pensada en ti.
+                        
+                    </p>
+                        <b>Eres la mujer más hermosa 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/1UwP0GRuC1LEH7DpR3c0tY?si=31da1e68435f49d7"
     }
 
     return (
@@ -1284,7 +1331,10 @@ function App() {
                         <div className="petal"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day43)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal2"></div>
@@ -1295,7 +1345,10 @@ function App() {
                         <div className="petal2"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day44)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal3"></div>
@@ -1306,7 +1359,10 @@ function App() {
                         <div className="petal3"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day45)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal"></div>
