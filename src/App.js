@@ -714,6 +714,22 @@ function App() {
         song: "https://open.spotify.com/track/1UwP0GRuC1LEH7DpR3c0tY?si=31da1e68435f49d7"
     }
 
+    const day46 = {
+        day: 'Día 46',
+        title: 'Hola chefsita 💛️',
+        body: `
+                    <p>
+                      Hoy estoy muy feliz porque pude retomar el gym al igual que tú, porque ya podrás seguir tu dieta y
+                      porque tengo a la novia más bonita de todas. Definitivamente mayo es un mes muy bonito para nosotros
+                      y ojalá mañana pueda darte una buena noticia. Espero que tengas un bonito día y disfrutes de esta flor.
+                      La canción la volví a escuchar hoy por el aleatorio en el spotify, ojalá te guste.
+                        
+                    </p>
+                        <b>Te amo juguito de manzana 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/2z7UKVsBdbA7HFPunDKDP4?si=f5f8de53929a4119"
+    }
+
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
         <h1 className="text-2xl font-semibold text-[#fff] pt-10">El jardín de Elisa 💛</h1>
@@ -1373,7 +1389,10 @@ function App() {
                         <div className="petal"></div>
                     </div>
                 </div>
-                <div className="relative">
+                <div onClick={() => {
+                    setDayToModal(day46)
+                    setVisible(true)
+                }} className="relative cursor-pointer">
                     <div className="flower">
                         <div className="center"></div>
                         <div className="petal2"></div>
