@@ -459,7 +459,7 @@ function App() {
 
     const day29 = {
         day: 'Día 29',
-        title: 'Hola 💛️',
+        title: 'Hola chula 💛️',
         body: `
                     <p>
                        No la había puesto aquí.
@@ -728,6 +728,37 @@ function App() {
                         <b>Te amo juguito de manzana 💛️️</b>
         `,
         song: "https://open.spotify.com/track/2z7UKVsBdbA7HFPunDKDP4?si=f5f8de53929a4119"
+    }
+
+    const day47 = {
+        day: 'Día 47',
+        title: 'Hola mi mujer 💛️',
+        body: `
+                    <p>
+                      Originalmente esta es la última flor del jardín. 47 días escribiendote, ¿te imaginaste algo así el
+                      21 de marzo? Escribo esto con un estrés encima que tuve todo el día de hoy, pero también con la 
+                      "última" canción del jardín, que seleccioné desde días atras. Quizá para este momento ya sea nuestro
+                       aniversario o esté a horas de serlo así que feliz aniversario mi amor. Este pequeño proyecto me 
+                       ayudó a expresar mejor mis sentimientos, a que día con día aunque me sintiera mal, aunque hayamos tenido
+                       una conversación difícil o aunque ya fuera demasiado tarde siempre tenía que cumplir con una flor. 
+                       Una curiosidad de esto, y no sé si lo notaste, es que en cada flor te saludaba de una forma distinta así
+                       que sí, encontré 47 formas diferentes de llamarte. Me gustaría también que si tienes tiempo puedas volver
+                       a visitar todas las flores y recuerdes todo lo que hemos pasado juntos. Sé que el 100% de los momentos no 
+                       han sido buenos pero creéme que todo ha ayudado de alguna manera a que estemos más unidos cada vez más.
+                       Gracias por apoyarme en todo momento, por creer en mí, por darme seguridad, confianza y principalmente amor.
+                       Eres una niña maravillosa, comprometida, responsable, un poco ocupada, y muy bonita, en resumido eres lo que
+                       siempre quise. Estoy muy feliz de poder llegar a un mes más juntos y espero con ansias las aventuras que nos 
+                       hacen falta. Espero que en estos días sigamos mejorando individualmente y en pareja en las diferentes cuestiones
+                       que se nos han dificultado en estas últimas semanas, sabes que tienes todo mi apoyo para lo que sea que necesites.
+                       Estoy enamorado de ti y perdóname si a veces sí sueno como tu tóxico y me comporto de esa manera, creo que solo es
+                       que me encanta la idea de que seas mi novia. Por último quiero decirte que quiero que te sientas orgullosa de quien
+                       eres, que se que no es fácil pasar por las cosas que en ocasiones te suceden pero que el hecho de que puedas salir
+                       adelante me hace amarte aún más, eres una persona capaz, un ejemplo a seguir y mi inspiración para salir adelante. 
+                       Te amo millones Nadia Elisa.                 
+                    </p>
+                        <b>Siempre tuyo, Ernesto 💛️️</b>
+        `,
+        song: "https://open.spotify.com/track/1BrbXIJ7b161oQ0PfC0K32?si=10f9bc0555f04103"
     }
 
     return (
