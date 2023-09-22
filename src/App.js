@@ -761,6 +761,21 @@ function App() {
         song: "https://open.spotify.com/track/1BrbXIJ7b161oQ0PfC0K32?si=10f9bc0555f04103"
     }
 
+    const day48 = {
+        day: 'Día 48',
+        title: 'Hola mi catwoman 💛️',
+        body: `
+                    <p>
+                      ¿Es este el regreso del jardín? Posiblemente, te lo voy a dejar en incógnita como lo hacía cuando recién nos conocimos.
+                      Eres la niña más bonita que he conocido, espero que todo lo que te propones lo logres y que esta semana que falta del mes sea
+                      una de las mejores para ti. Ya quiero que llegue el concierto para cantarte I wanna be yours. Ya quiero verte mañana y llenarte de besos, te amo hoy y siempre.
+                      Te voy a dejar la canción que te dije sería para nuestra boda, la estaba guardando para este momento así que espero te guste.          
+                    </p>
+                        <b>Siempre tuyo, Ernesto 💛️️</b>
+        `,
+        song: "https://open.spotify.com/intl-es/track/7Ewz6bJ97vUqk5HdkvguFQ?si=d9cdbd1655c04ad2"
+    }
+
     return (
     <div className="bg-[#007B46] h-screen flex items-center flex-col w-full overflow-y-scroll overflow-x-hidden px-4">
         <h1 className="text-2xl font-semibold text-[#fff] pt-10">El jardín de Elisa 💛</h1>
@@ -1448,6 +1463,22 @@ function App() {
                         <div className="petal3"></div>
                     </div>
                 </div>
+        </div>
+        <div className="flex flex-wrap">
+            <div onClick={() => {
+                setDayToModal(day48)
+                setVisible(true)
+            }} className="relative cursor-pointer">
+                <div className="flower">
+                    <div className="center"></div>
+                    <div className="petal"></div>
+                    <div className="petal"></div>
+                    <div className="petal"></div>
+                    <div className="petal"></div>
+                    <div className="petal"></div>
+                    <div className="petal"></div>
+                </div>
+            </div>
         </div>
         {
             visible && (
